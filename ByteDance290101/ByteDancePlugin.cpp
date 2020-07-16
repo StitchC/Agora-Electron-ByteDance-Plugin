@@ -889,6 +889,7 @@ const char* ByteDancePlugin::getParameter(const char* key)
 
 int ByteDancePlugin::release()
 {
+	delete mHandInfo.p_hands;
 	mReleased = true;
 	folderPath = "";
 	delete this;
